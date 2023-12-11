@@ -79,7 +79,7 @@ export const createStoreLocatorMap = async (
   }
 
   const map = new google.maps.Map(container, { ...defaultMapOptions, ...mapOptions });
-  window.storeLocatorMap = map
+  (window as any)["storeLocatorMap"] = map;
   if (typeof geoJson === 'string') {
     map.data.loadGeoJson(geoJson);
   } else {

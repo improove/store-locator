@@ -83,7 +83,6 @@ src/**/*.js
 
 # Compiled JavaScript files
 coverage/
-dist/
 
 .idea/
 .env.local
